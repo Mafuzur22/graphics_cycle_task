@@ -1,0 +1,117 @@
+{
+  "info": {
+    "_postman_id": "1308c796-e655-4f9a-a2dc-fc62a00390c5",
+    "name": "graphics_cycle_task_api_test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58152777"
+  },
+  "item": [
+    {
+      "name": "transtalepdf",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "value": "",
+              "type": "file",
+              "id": 6,
+              "fileUploadError": ""
+            },
+            {
+              "key": "source_language",
+              "value": "en",
+              "type": "text",
+              "id": 7
+            },
+            {
+              "key": "target_language",
+              "value": "bn",
+              "type": "text",
+              "id": 8
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/translate-pdf",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "translate-pdf"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "watermarkpdf",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "value": "",
+              "type": "file",
+              "id": 0,
+              "fileUploadError": ""
+            },
+            {
+              "key": "text",
+              "value": "CONFIDENTIAL",
+              "type": "text",
+              "id": 1
+            },
+            {
+              "key": "position",
+              "value": "center",
+              "type": "text",
+              "id": 2
+            },
+            {
+              "key": "opacity",
+              "value": "0.25",
+              "type": "text",
+              "id": 3
+            },
+            {
+              "key": "color",
+              "value": "#FF0000",
+              "type": "text",
+              "id": 4
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/editor/pdf/watermark",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "editor",
+            "pdf",
+            "watermark"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
