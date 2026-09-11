@@ -1,0 +1,8 @@
+fastapi==0.109.2
+uvicorn==0.27.1
+python-multipart==0.0.9
+PyMuPDF==1.23.21
+deep-translator==1.11.4
+fpdf2==2.7.7
+redis==5.0.1
+uharfbuzz==0.39.0
